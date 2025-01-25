@@ -27,10 +27,11 @@ const styles = StyleSheet.create({
   title: {
     color: 'black',
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: 'bold',
     lineHeight: 24,
     textAlign: 'center',
     top:8,
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   icon: {
     color: '#fff',

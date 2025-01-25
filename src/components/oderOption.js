@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 2,
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   optionsRow: {
     flexDirection: 'row',

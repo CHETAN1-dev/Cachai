@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   row: {
     flexDirection: 'row',
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 8,
     fontWeight:'bold',
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   chevron: {
     marginLeft: 'auto',

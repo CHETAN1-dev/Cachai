@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 8,
     marginLeft:16,
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   row: {
     flexDirection: 'row',
@@ -53,6 +54,7 @@ const styles = StyleSheet.create({
     fontSize:16,
     marginLeft:6,
     fontWeight:'bold',
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   contact:{
     fontSize:16,

@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 8,
     paddingLeft: 8,
+    fontFamily:'BeVietnamPro-Bold.ttf',
   },
   distcountBanner:{
   marginLeft:10,
