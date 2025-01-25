@@ -7,10 +7,10 @@ import EarlyIcon from '../assets/icons/OderingOptionIcon/early';
 
 const OrderingOptions = () => {
   const options = [
-    {id: 1,  icon: <TakeOutIcon width={74} height={70} />},
-    {id: 2,  icon: <DeliveryIcon width={74} height={70} />},
-    {id: 3,  icon: <DineIcon width={74} height={70} />},
-    {id: 4,  icon: <EarlyIcon width={74} height={70} />},
+    {id: 1,  icon: <TakeOutIcon width={84} height={70} />},
+    {id: 2,  icon: <DeliveryIcon width={84} height={70} />},
+    {id: 3,  icon: <DineIcon width={84} height={70} />},
+    {id: 4,  icon: <EarlyIcon width={84} height={70} />},
   ];
 
   return (
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   option: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 8,
+    padding: 5,
   },
 });
 

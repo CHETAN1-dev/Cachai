@@ -45,11 +45,11 @@ const styles = StyleSheet.create({
   iconWrapper: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 4,
+    marginBottom:2,
   },
   label: {
-    fontSize: 15,
-    marginTop:-6,
+    fontSize: 14,
+    marginTop:-4,
     color: 'black',
   },
 });

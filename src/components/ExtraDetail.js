@@ -68,8 +68,8 @@ const styles = StyleSheet.create({
   },
   value: {
     fontSize: 15,
-    color: '#FFA500',
-    fontWeight:'bold',
+    color: 'orange',
+    fontWeight:'800',
     fontFamily:'BeVietnamPro-Bold.ttf',
   },
 });
