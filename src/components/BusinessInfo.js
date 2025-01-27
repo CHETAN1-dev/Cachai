@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import Banner from '../assets/images/banner';
 import BackIcon from '../assets/icons/BuisnessInfoIcon/back';
 import LikeIcon from '../assets/icons/BuisnessInfoIcon/Like';
@@ -11,8 +11,11 @@ const BusinessInfo = () => {
   return (
     <View style={styles.container}>
       <View style={styles.bannerContainer}>
-        <Banner style={styles.banner} />
-        {/* <Image source={require('../assets/images/Frame 42.png')}/> */}
+        {/* <Banner /> */}
+        <Image
+          source={require('../assets/images/57bac1200a0694ec6296d18f87702f82.png')}
+          style={styles.bannerImage}
+        />
         <TouchableOpacity
           style={styles.backIcon}
           onPress={() => console.log('Back icon pressed')}>
@@ -59,28 +62,26 @@ const BusinessInfo = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    marginBottom: 8,
-    paddingHorizontal: 1,
-  },
-  banner: {
     width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+    // marginBottom: 15,
+    // paddingHorizontal: 1,
+  },
+  bannerImage: {
+    objectFit: 'cover',
+    width: 420,
+    height: 200,
   },
   bannerContainer: {
-    height: 190,
-    width: 360,
-    paddingTop: -1,
-    paddingRight: 20,
-    paddingBottom: 20,
-    paddingLeft: 20,
-    gap: 10,
+    width: 'auto',
+    height: 200,
   },
   backIcon: {
     position: 'absolute',
     top: 11,
-    left: 20,
+    left: 2,
     zIndex: 10,
   },
   likeButton: {
@@ -98,18 +99,18 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'left',
     marginBottom: 8,
-    fontFamily:'BeVietnamPro-Bold.ttf',
+    fontFamily: 'BeVietnamPro-Bold.ttf',
   },
   businessDescription: {
     fontSize: 14,
     textAlign: 'left',
-    top:-6,
+    top: -6,
     lineHeight: 20,
     marginBottom: 16,
     paddingVertical: 3,
-    fontWeight:'bold',
-    fontFamily:'BeVietnamPro-Bold.ttf',
-    paddingLeft:4,
+    fontWeight: 'bold',
+    fontFamily: 'BeVietnamPro-Bold.ttf',
+    paddingLeft: 4,
   },
   statsContainer: {
     flexDirection: 'row',
@@ -127,16 +128,16 @@ const styles = StyleSheet.create({
   statText: {
     fontSize: 16,
     color: '#FFA500',
-    marginLeft:4,
+    marginLeft: 4,
     fontWeight: 'bold',
-    fontFamily:'BeVietnamPro-Bold.ttf',
+    fontFamily: 'BeVietnamPro-Bold.ttf',
   },
   statTextt: {
     fontSize: 16,
     color: 'black',
-    marginLeft:4,
+    marginLeft: 4,
     fontWeight: '700',
-    fontFamily:'BeVietnamPro-Bold.ttf',
+    fontFamily: 'BeVietnamPro-Bold.ttf',
   },
   divider: {
     width: 1,
