@@ -4,7 +4,7 @@ import ForkIcon from '../assets/icons/BuisnessDetailIcon/fork';
 import ClockIconn from '../assets/icons/BuisnessDetailIcon/Clockk';
 import WebIcon from '../assets/icons/BuisnessDetailIcon/web';
 import UsdICon from '../assets/icons/BuisnessDetailIcon/usd';
-import ChevronIcon from '../assets/icons/BuisnessDetailIcon/chevron'; // Import Chevron Right Icon
+import ChevronIcon from '../assets/icons/BuisnessDetailIcon/chevron';
 
 const BusinessDetails = () => {
   const handleLinkPress = () => {
