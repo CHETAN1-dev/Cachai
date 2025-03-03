@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import BusinessBanner from '../../BusinessBanner/atom/BusinessBanner';
-import BusinessStats from '../../BusinessBanner/atom/BusinessStats';
+import BusinessBanner from '../BusinessBanner/atom/BusinessBanner';
+import BusinessStats from '../BusinessBanner/atom/BusinessStats';
 
 const BusinessInfo = ({
   businessName = 'Cachai Po!',

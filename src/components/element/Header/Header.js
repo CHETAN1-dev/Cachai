@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import IconButton from '../../Header/atom/IconButton';
-import TitleText from '../../Header/atom/TitleText';
-import BellIcon from '../../../../assets/icons/HeaderIcon/bell';
-import CartIcon from '../../../../assets/icons/HeaderIcon/cart';
+import IconButton from '../Header/atom/IconButton';
+import TitleText from '../Header/atom/TitleText';
+import BellIcon from '../../../assets/icons/HeaderIcon/bell';
+import CartIcon from '../../../assets/icons/HeaderIcon/cart';
 
 const Header = ({
   title = 'Business Details',

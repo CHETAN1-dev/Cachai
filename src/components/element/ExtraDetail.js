@@ -1,14 +1,13 @@
 import React from 'react';
 import {View,StyleSheet} from 'react-native';
-import StoreIcon from '../assets/icons/ExtraDetailIcon/store';
-import DogIcon from '../assets/icons/ExtraDetailIcon/pet';
-import CamageIcon from '../assets/icons/ExtraDetailIcon/family';
-import CarIcon from '../assets/icons/ExtraDetailIcon/car';
-import TShirtIcon from '../assets/icons/ExtraDetailIcon/attire';
-import LampIcon from '../assets/icons/ExtraDetailIcon/ambience';
-
-import {DetailRow} from '../components/molecule/DetailRow';
-import {DetailText} from '../components/atoms/Detail';
+import StoreIcon from '../../assets/icons/ExtraDetailIcon/store';
+import DogIcon from '../../assets/icons/ExtraDetailIcon/pet';
+import CamageIcon from '../../assets/icons/ExtraDetailIcon/family';
+import CarIcon from '../../assets/icons/ExtraDetailIcon/car';
+import TShirtIcon from '../../assets/icons/ExtraDetailIcon/attire';
+import LampIcon from '../../assets/icons/ExtraDetailIcon/ambience';
+import {DetailRow} from '../molecule/DetailRow';
+import {DetailText} from '../atoms/Detail';
 
 const ExtraDetails = () => {
   const details = [

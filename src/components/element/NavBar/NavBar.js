@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import HomeIcon from '../../assets/icons/NavBarIcon/hom';
-import PromotionIcon from '../../assets/icons/NavBarIcon/promotion';
-import ReorderIcon from '../../assets/icons/NavBarIcon/reOder';
-import FavouriteIcon from '../../assets/icons/NavBarIcon/favourite';
-import MoreIcon from '../../assets/icons/NavBarIcon/more';
-import NavItem from '../molecule/NavItem';
+import HomeIcon from '../../../assets/icons/NavBarIcon/hom';
+import PromotionIcon from '../../../assets/icons/NavBarIcon/promotion';
+import ReorderIcon from '../../../assets/icons/NavBarIcon/reOder';
+import FavouriteIcon from '../../../assets/icons/NavBarIcon/favourite';
+import MoreIcon from '../../../assets/icons/NavBarIcon/more';
+import NavItem from '../NavBar/atom/NavItem';
 
 const NavBar = ({
   backgroundColor = '#FF6600',

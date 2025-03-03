@@ -1,6 +1,6 @@
-import LocationIcon from '../../assets/icons/ContactInfoIcon/Loaction';
-import PhoneIcon from '../../assets/icons/ContactInfoIcon/phone';
-import EmailIcon from '../../assets/icons/ContactInfoIcon/email';
+import LocationIcon from '../../../assets/icons/ContactInfoIcon/Loaction';
+import PhoneIcon from '../../../assets/icons/ContactInfoIcon/phone';
+import EmailIcon from '../../../assets/icons/ContactInfoIcon/email';
 
 export const contacts = [
   { label: '320 SE Baseline St, Hillsboro, OR 97123, US', Icon: LocationIcon, isLink: false },

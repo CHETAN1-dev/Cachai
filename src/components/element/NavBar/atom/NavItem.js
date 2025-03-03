@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, View, StyleSheet} from 'react-native';
-import NavLabel from '../atoms/NavLabel';
+import NavLabel from '../atom/NavLabel';
 
 const NavItem = ({children, Icon, iconSize = 28, onPress}) => {
   return (

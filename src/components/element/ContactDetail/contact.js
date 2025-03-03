@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {DetailRow} from '../molecule/DetailRow';
-import {DetailText, LinkText} from '../atoms/Detail';
+import {DetailRow} from '../../molecule/DetailRow';
+import {DetailText, LinkText} from '../../atoms/Detail';
 
 const ContactInformation = ({
   title = 'Contact Information',

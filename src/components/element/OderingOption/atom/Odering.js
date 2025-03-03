@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, TouchableOpacity} from 'react-native';
 
 const Ordering = ({ Icon, label,
-  size = 65,
+  size = 70,
  }) => {
   return (
     <TouchableOpacity style={styles.option} onPress={() => console.log(`${label} pressed`)}>
