@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View,StyleSheet} from 'react-native';
 import StoreIcon from '../assets/icons/ExtraDetailIcon/store';
 import DogIcon from '../assets/icons/ExtraDetailIcon/pet';
 import CamageIcon from '../assets/icons/ExtraDetailIcon/family';
@@ -7,25 +7,27 @@ import CarIcon from '../assets/icons/ExtraDetailIcon/car';
 import TShirtIcon from '../assets/icons/ExtraDetailIcon/attire';
 import LampIcon from '../assets/icons/ExtraDetailIcon/ambience';
 
+import {DetailRow} from '../components/molecule/DetailRow';
+import {DetailText} from '../components/atoms/Detail';
+
 const ExtraDetails = () => {
   const details = [
-    {label: 'Curbside Pickup', value: 'Yes', icon: <StoreIcon />},
-    {label: 'Parking', value: 'Private Lot', icon: <CarIcon />},
-    {label: 'Attire', value: 'Casual Dress', icon: <TShirtIcon />},
-    {label: 'Ambience', value: 'Casual', icon: <LampIcon />},
-    {label: 'Family Friendly', value: 'Yes', icon: <CamageIcon />},
-    {label: 'Pet Friendly', value: 'No', icon: <DogIcon />},
+    {label: 'Curbside Pickup', value: 'Yes', Icon: StoreIcon},
+    {label: 'Parking', value: 'Private Lot', Icon: CarIcon},
+    {label: 'Attire', value: 'Casual Dress', Icon: TShirtIcon},
+    {label: 'Ambience', value: 'Casual', Icon: LampIcon},
+    {label: 'Family Friendly', value: 'Yes', Icon: CamageIcon},
+    {label: 'Pet Friendly', value: 'No', Icon: DogIcon},
   ];
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Extra Details:</Text>
+      <DetailText style={styles.header}>Extra Details:</DetailText>
       {details.map((detail, index) => (
-        <View key={index} style={styles.detailRow}>
-          <View style={styles.iconWrapper}>{detail.icon}</View>
-          <Text style={styles.label}>{detail.label}</Text>
-          <Text style={styles.value}>{detail.value}</Text>
-        </View>
+        <DetailRow key={index} Icon={detail.Icon}>
+          <DetailText style={styles.label}>{detail.label}:</DetailText>
+          <DetailText style={styles.value}>{detail.value}</DetailText>
+        </DetailRow>
       ))}
     </View>
   );
@@ -44,33 +46,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 5,
     color: 'black',
-    fontFamily:'BeVietnamPro-Bold.ttf',
-  },
-  detailRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 4,
-    top:1,
-  },
-  iconWrapper: {
-    width: 32,
-    height: 32,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   label: {
     flex: 1,
     fontSize: 16,
     color: 'black',
-    marginLeft: 5,
-    fontWeight:'bold',
-    fontFamily:'BeVietnamPro-Bold.ttf',
+    fontWeight: 'bold',
   },
   value: {
     fontSize: 15,
     color: 'orange',
-    fontWeight:'800',
-    fontFamily:'BeVietnamPro-Bold.ttf',
+    fontWeight: '800',
   },
 });
 

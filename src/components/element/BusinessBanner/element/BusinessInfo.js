@@ -1,17 +1,19 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import BusinessBanner from '../molecule/BusinessBanner';
-import BusinessStats from '../molecule/BusinessStats';
-const BusinessInfo = () => {
+import BusinessBanner from '../../BusinessBanner/atom/BusinessBanner';
+import BusinessStats from '../../BusinessBanner/atom/BusinessStats';
+
+const BusinessInfo = ({
+  businessName = 'Cachai Po!',
+  description = 'We specialize in authentic and traditional Chilean food. Experience fresh Chilean bread and BBQ.',
+  bannerImage,
+}) => {
   return (
     <View style={styles.container}>
-      <BusinessBanner />
+      <BusinessBanner imageSource={bannerImage} />
       <View style={styles.detailsWrapper}>
-        <Text style={styles.businessName}>Cachai Po!</Text>
-        <Text style={styles.businessDescription}>
-          We specialize in authentic and traditional Chilean food. Experience
-          fresh Chilean bread and BBQ.
-        </Text>
+        <Text style={styles.businessName}>{businessName}</Text>
+        <Text style={styles.businessDescription}>{description}</Text>
       </View>
       <BusinessStats />
     </View>
@@ -35,15 +37,9 @@ const styles = StyleSheet.create({
   businessDescription: {
     fontSize: 15,
     lineHeight: 20,
-    fontWeight:'bold',
-    fontFamily:'BeVietnamPro-Bold.ttf',
+    fontWeight: 'bold',
+    fontFamily: 'BeVietnamPro-Bold.ttf',
     marginBottom: 16,
-  },
-  likeButton: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    zIndex: 10,
   },
 });
 

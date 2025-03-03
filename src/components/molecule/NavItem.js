@@ -1,19 +1,25 @@
 import React from 'react';
 import {TouchableOpacity, View, StyleSheet} from 'react-native';
-import NavIcon from '../atoms/NavIcon';
 import NavLabel from '../atoms/NavLabel';
 
-const NavItem = ({label, Icon, onPress}) => {
+const NavItem = ({children, Icon, iconSize = 28, onPress}) => {
   return (
-    <TouchableOpacity style={styles.navItem} onPress={onPress}>
-      <NavIcon Icon={Icon} />
-      <NavLabel>{label}</NavLabel>
+    <TouchableOpacity style={styles.item} onPress={onPress}>
+      <View style={styles.iconWrapper}>
+        <Icon width={iconSize} height={iconSize} />
+      </View>
+      <NavLabel>{children}</NavLabel>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  navItem: {
+  item: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  },
+  iconWrapper: {
     justifyContent: 'center',
     alignItems: 'center',
   },

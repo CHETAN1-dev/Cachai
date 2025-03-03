@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import OrderingOptionList from '../molecules/OrderingOptionList';
+import {View, StyleSheet, Text} from 'react-native';
+import OrderingOptionList from './atom/OrderingOptionList';
 
-const OrderingOptions = () => {
+const OrderingOptions = ({title = 'Ordering Options:'}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Ordering Options:</Text>
+      <Text style={styles.heading}>{title}</Text>
       <OrderingOptionList />
     </View>
   );
@@ -13,7 +13,7 @@ const OrderingOptions = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 4,
+    marginBottom: 10,
     paddingHorizontal: 18,
     marginTop: 1,
   },

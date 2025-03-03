@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import DiscountBaner from '../assets/images/discount';
+import DiscountBaner from '../../assets/images/discount';
 export default function Discount() {
   return (
     <View style={styles.discountContainer}>
