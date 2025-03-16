@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Svg, {Path} from 'react-native-svg';
-const HomeIcon = props => (
+const HomeIcon = ({ color = 'white',...props}) => (
   <Svg
     width={39}
     height={39}
     viewBox="0 0 39 39"
-    fill="none"
+    fill={color}
     xmlns="http://www.w3.org/2000/svg"
     {...props}>
     <Path
